@@ -16,7 +16,7 @@ export function TableOfContents({ tocs, pathName, frontmatter }: TableProps) {
         <aside
           className="toc sticky basis-1/3 top-26 hidden h-[100vh] min-w-[230px] gap-3 xl:flex xl:flex-col"
           aria-label="Table of contents"
-        >
+        >   
           {Settings.toc && <TableAnchor tocs={tocs.tocs} />}
           {Settings.feedback && (
             <Feedback slug={pathName} title={frontmatter.title} />
